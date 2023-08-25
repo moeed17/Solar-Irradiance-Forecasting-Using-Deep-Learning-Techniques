@@ -36,7 +36,7 @@ In this context, our research/work presents a comparative study of various deep 
 A recurrent neural network (RNN) is a powerful neural network architecture that uses its hidden layer to capture and remember information from previous data points, making it effective for tasks involving sequences.
 
 2. LSTM
-Long Short-Term Memory (LSTM) networks are a type of Recurrent Neural Network (RNN) architecture consisting of forget gate, candidate layer (tanh), input gate, output gate, hidden state, and memory state.
+Long Short-Term Memory (LSTM) networks are a type of Recurrent Neural Network (RNN) architecture consisting of a forget gate, candidate layer (tanh), input gate, output gate, hidden state, and memory state.
 
 3. GRU
 The (GRU) is a specialized type of RNN designed for sequential data. It tries to solve the issue of exploding and vanishing gradients by incorporating two gate mechanisms: the first is the update gate and the second is the reset gate. Using these gates, it remembers relevant information needed and discards the rest.
@@ -48,11 +48,11 @@ You can find more details on the discussed models [here](https://towardsdatascie
 
 4. TCN
 A Temporal Convolutional Network (TCN) is an advanced type of neural architecture that has evolved from a 1-D Convolutional Neural Network (CNN).
-This method uses stacked convolutions with causal padding, dilation, and residual or skips connections to get a much larger receptive field.
+This method uses stacked convolutions with causal padding, dilation, and residual or skip connections to get a much larger receptive field.
 More details on TCN can be found comprehensively [here](https://towardsdatascience.com/temporal-convolutional-networks-the-next-revolution-for-time-series-8990af826567).
 
 ### 3) Dataset
-The Karachi dataset of 2019, acquired from the NSRDB, provides solar irradiance readings at a time resolution of 15 minutes. The dataset covers a period of one year, consisting of 35,040 samples. The  last ten days of data were used exclusively for testing, while the remaining dataset served as the training data. Notably, no portion of the dataset was allocated for validation. The data used to support the findings of this study are available [here](https://nsrdb.nrel.gov/data-viewer).
+The Karachi dataset of 2019, acquired from the NSRDB, provides solar irradiance readings at a time resolution of 15 minutes. The dataset covers a period of one year, consists of 35,040 samples. The  last ten days of data were used exclusively for testing, while the remaining dataset served as the training data. Notably, no portion of the dataset was allocated for validation. The data used to support the findings of this study are available [here](https://nsrdb.nrel.gov/data-viewer).
 
 ### 4) Results
 After training for 500 epochs, graphs/results conclude that LSTM was the most accurate model among the four. The plots below clearly demonstrate the superiority in terms of forecasting of the LSTM model when comparing it to the other neural network models.
@@ -70,7 +70,7 @@ The model's accuracy was assessed after training the models on the entire year's
 𝑅𝑁𝑁: 0.02217
 </p>
 
-All models' R-squared values are as follows:
+All models R-squared values are as follows:
 <p align="center">
 𝐿𝑆𝑇𝑀: 0.993406 
 <p align="center">
@@ -83,6 +83,6 @@ All models' R-squared values are as follows:
 that is the models have an accuracy of 99%.
 
 ### 5) Conclusions & Future Work
-This study and work present a comparative analysis of various neural network models for very short-term solar irradiance and wind power forecasting using the Karachi dataset. The key findings indicate that the LSTM model outperforms the other models, achieving the highest and lowest R-squared and RMSE values, respectively.
+This study and work present a comparative analysis of various neural network models for very short-term solar irradiance forecasting using the Karachi dataset. The key findings indicate that the LSTM model outperforms the other models, achieving the highest and lowest R-squared and RMSE values, respectively.
 
 Future work could explore feature extraction techniques like time series decomposition to further enhance forecasting model performance. Additionally, the exploration of Liquid Neural Networks, which aim to achieve powerful predictions with fewer neurons and connections inspired by C. Elegans, shows promise. These approaches have the potential to offer more efficient and effective forecasting models. Examining these techniques and alternative architectures can expand and enhance the proposed forecasting models' applicability and generalizability.
